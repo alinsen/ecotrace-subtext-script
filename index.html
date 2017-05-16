@@ -34,6 +34,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+        }
+    </style>
+    
 
 </head>
 
@@ -98,6 +108,31 @@
             </div>
         </div>
     </section>
+    
+    
+    
+    
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var bellingham = {lat: 48.731316, lng: -122.485619};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                                          zoom: 15,
+                                          center: bellingham
+                                          });
+                                          var marker = new google.maps.Marker({
+                                                                              position: bellingham,
+                                                                              map: map
+                                                                              });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCifcNzvTgVeYnEcuLzwi0jaZblWAjB_iQ&callback=initMap">
+        </script>
+    
+    
+    
 
     <section id="features" class="features">
         <div class="container">
@@ -189,6 +224,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    
+    
 
 </body>
 
