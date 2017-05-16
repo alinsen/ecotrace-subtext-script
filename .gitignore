@@ -1,0 +1,5 @@
+#ignore node_modules -- you're going to build this on your own on your computer when you run npm install
+node_modules/
+
+#ignore .DS_STORE
+.DS_Store
