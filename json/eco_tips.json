@@ -1,0 +1,22 @@
+{
+  "tip1" : {
+    "title" : "Yooooooo",
+    "number" : 1,
+    "description" : "deeeeeeescribe",
+    "cite" : "site"
+  },
+
+  "tip2" : {
+    "title" : "Yooooooo",
+    "number" : 2,
+    "description" : "deeeeeeescribe",
+    "cite" : "site"
+  },
+
+  "tip3" : {
+    "title" : "Yooooooo",
+    "number" : 3,
+    "description" : "deeeeeeescribe",
+    "cite" : "site"
+  }
+}

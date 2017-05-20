@@ -1,0 +1,11 @@
+{
+  "activity" : {
+    "title" : "activity title",
+    "rating" : 5,
+    "description" : "deeeeeeescribe",
+    "data" : 4.88,
+    "daily_money_saved" : 0.50
+  },
+
+  
+}
