@@ -1,22 +1,148 @@
 {
   "tip1" : {
-    "title" : "Yooooooo",
+    "title" : "Shut off the lights",
     "number" : 1,
-    "description" : "deeeeeeescribe",
-    "cite" : "site"
+    "description" : "Turn off the lights when you leave a room.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
   },
 
   "tip2" : {
-    "title" : "Yooooooo",
+    "title" : "Turn off your devices",
     "number" : 2,
-    "description" : "deeeeeeescribe",
-    "cite" : "site"
+    "description" : "Turn off your TV, computer, radio, etc. when you are not using them by unplugging them. These devices keep consuming small amounts of energy when you hit the 'off' button, so unplug them.",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
   },
 
   "tip3" : {
-    "title" : "Yooooooo",
+    "title" : "Switch your bulbs",
     "number" : 3,
-    "description" : "deeeeeeescribe",
-    "cite" : "site"
+    "description" : "Switch as many bulbs as possible to compact fluorescent bulbs or LED. Lighting composes about 25% of the average home's energy bill. Compact fluorescent bulbs are estimated to save you $20 over 3 years, and last for around 7 years.",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
+  },
+
+  "tip4" : {
+    "title" : "Lower the temperature",
+    "number" : 4,
+    "description" : "Try setting your heater to no more than 68 in the winter and no higher than 78 in the summer, set the hot water heater to 140, and use energy saving settings on your refrigerator.",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
+  },
+
+  "tip5" : {
+    "title" : "Compost",
+    "number" : 5,
+    "description" : "The Environmental Defense Fund says that around 18 percent of the waste that an average family in the U.S. produces comes from the yard and garden. If you recycle your yard and organic kitchen waste, you can reduce the amount of energy used to get that waste to the landfill",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
+  },
+
+  "tip6" : {
+    "title" : "Use small appliances in the kitchen",
+    "number" : 6,
+    "description" : "If you use a smaller device to cook food, like a toaster oven or crock pot instead of the oven, you can reduce energy output and heat production. Also, be smart about what devices you have; some are not necessary.",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
+  },
+
+  "tip7" : {
+    "title" : "Carpool to work",
+    "number" : 7,
+    "description" : "This is a great alternative to riding the bus or a bike to work if your commute is too long for those options. Get some coworkers together and work out a carpool.",
+    "cite" : "http://www.practicalenvironmentalist.com/21-practical-ways-to-help-the-environment/"
+  },
+
+  "tip8" : {
+    "title" : "Walk",
+    "number" : 8,
+    "description" : "Walking is a great way to reduce emissions, and if you live in a city or medium-sized town most important places are within walking distance. Plus, you can get exerice.",
+    "cite" : ""
+  },
+
+  "tip9" : {
+    "title" : "Take the bus",
+    "number" : 9,
+    "description" : "If your city's transportation system is substantial, riding the bus can greatly help to reduce your personal emissions. Check your local bus routes and see what changes you can make.",
+    "cite" : ""
+  },
+
+  "tip10" : {
+    "title" : "Ride your bike",
+    "number" : 10,
+    "description" : "A bike can get you someplace farther and in less time than walking, plus it also gets you exercise. If you cannot bike to work, consider other errands you run and places you go frequently. Can you get there on a bike?",
+    "cite" : ""
+  },
+
+  "tip11" : {
+    "title" : "Turn off your computer",
+    "number" : 11,
+    "description" : "Enable your computer to go into sleep mode when not in use, and turn it off at night.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip12" : {
+    "title" : "Open the blinds",
+    "number" : 12,
+    "description" : "Use natural light whenever possible, instead of turning on the lights in a room.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip13" : {
+    "title" : "Reduce the use of plastic bags",
+    "number" : 13,
+    "description" : "Use canvas bags as grocery bags and use washable cloth bags for fresh produce and for food storage on the go.",
+    "cite" : ""
+  },
+
+  "tip14" : {
+    "title" : "Bring your own mug",
+    "number" : 14,
+    "description" : "When you buy coffee, bring a reusable mug instread of getting the default non-reusable paper cup. Many stores have discounts when you bring your own mug.",
+    "cite" : ""
+  },
+
+  "tip15" : {
+    "title" : "Go green with laundry",
+    "number" : 15,
+    "description" : "Try to air-dry laundry instead of running the dryer. Also, wash clothes with cold water and only do the laundry when you have a full load.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip16" : {
+    "title" : "Shower smarter",
+    "number" : 16,
+    "description" : "Try and take shorter showers with less hot water. Don't run the water before getting in and shut off the water while lathering.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip17" : {
+    "title" : "Buy a waterbottle",
+    "number" : 17,
+    "description" : "Instead of using wasteful plastic waterbottles, buy a reusable one and refill it.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip18" : {
+    "title" : "Use the carwash",
+    "number" : 18,
+    "description" : "Chemicals in the soaps you use to clean your car damage the environment when they run into the grate or someone's lawn or a nearby stream or body of water. Take your car to the car wash, where chemicals are well-contained.",
+    "cite" : ""
+  },
+
+  "tip19" : {
+    "title" : "Eat locally",
+    "number" : 19,
+    "description" : "Locally-grown food requires less energy to transport from farm to table, and uses less chemicals and mass-producion practices to produce. When buying food, don't buy more than you need, otherwise it will go to waste.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip20" : {
+    "title" : "Reuse plastic",
+    "number" : 20,
+    "description" : "If you get a plastic bag, reuse it.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip21" : {
+    "title" : "Buy durable utensils",
+    "number" : 21,
+    "description" : "Buy more durable, reusable utensils and containers instead of one-time-use things.",
+    "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
   }
 }
