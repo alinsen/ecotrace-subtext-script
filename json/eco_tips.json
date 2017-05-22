@@ -142,7 +142,14 @@
   "tip21" : {
     "title" : "Buy durable utensils",
     "number" : 21,
-    "description" : "Buy more durable, reusable utensils and containers instead of one-time-use things.",
+    "description" : "Buy more durable, reusable utensils and containers instead of using disposables.",
     "cite" : "http://www.goucher.edu/about/environmental-sustainability/what-you-can-do/tips-for-students"
+  },
+
+  "tip22" : {
+    "title" : "Share and swap",
+    "number" : 22,
+    "description" : "Try not to buy clothes brand-new. Instead, check out a buy/sell store, second hand shop, garage sale, or a friend's closet. Don't just stop at clothing; you can share or hand-me-down books, magazines, household utensils, etc.",
+    "cite" : "https://www.nature.org/greenliving/gogreen/everydayenvironmentalist/index.htm"
   }
 }
