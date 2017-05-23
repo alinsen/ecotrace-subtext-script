@@ -97,11 +97,13 @@
             </div>
         </div>
     </header>
-    <section id="myprofile" class="download bg-primary text-center">
-      <div class="header1">
-        <h1 align="left">My Profile</h1>
-      </div>
+
+
+    <section id="myprofile" class="bg-primary text-center">
           <div class="container">
+            <div class="header1">
+              <h1 align="left">My Profile</h1>
+            </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading"></h2>
@@ -114,33 +116,33 @@
 
 
 
-    <section id="myactivity" class="features">
-      <div id="header">
-        <h1>My Activity</h1>
-      </div>
+    <section id="myactivity">
         <div class="container">
+          <div class="header1">
+            <h1>My Activity</h1>
+          </div>
             <div class="row">
               <div class="col-lg-12 text-center">
 		<!--medium https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp-->
                     <div class="section-heading">
                         <h2></h2>
 
-<form>
-WHAT DO YOU WANNA DO TODAY?<br>
-<select name="selectActivity">
-<option value="walk">Take a walk</option>
-<option value="recycle">Recycle</option>
-<option value="Trash" selected>Pick up trash</option>
-<option value="Waterbottle">Bring waterbottle</option>
-<option value="Bus">Take Bus</option>
-</select>
+                      <form>
+                      WHAT DO YOU WANNA DO TODAY?<br>
+                      <select name="selectActivity">
+                      <option value="walk">Take a walk</option>
+                      <option value="recycle">Recycle</option>
+                      <option value="Trash" selected>Pick up trash</option>
+                      <option value="Waterbottle">Bring waterbottle</option>
+                      <option value="Bus">Take Bus</option>
+                      </select>
 
-<br><br>
-<br><br>
+                      <br><br>
+                      <br><br>
 
-<input type="submit" value="SEND">
-<br><br>
-</form>
+                      <input type="submit" value="SEND">
+                      <br><br>
+                      </form>
 
 
                     </div>
@@ -150,11 +152,11 @@ WHAT DO YOU WANNA DO TODAY?<br>
     </section>
 
     <section id= "planmyday" class="cta">
-      <div id="header">
-        <h1 style="color:white;">Plan My Day</h1>
-      </div>
         <div class="cta-content">
             <div class="container">
+              <div class="header1">
+                <h1 style="color:white;">Plan My Day</h1>
+              </div>
                 <h2></h2>
                 <!--Litter Control Feature using Google Maps API-->
                 <h3>My Area</h3>
@@ -220,10 +222,10 @@ WHAT DO YOU WANNA DO TODAY?<br>
     </section>
 
     <section id="dailytips" class="features">
-      <div id="header">
-        <h1>Daily Tips</h1>
-      </div>
         <div class="container">
+          <div class="header1">
+            <h1>Daily Tips</h1>
+          </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
@@ -341,7 +343,7 @@ WHAT DO YOU WANNA DO TODAY?<br>
           backgroundColor: 'none',
           colors:['#004411', 'blue', '#2ad9c9', 'red', '#105952'],
           fontName: 'Lato',
-          fontSize: 20
+          fontSize: 20,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));

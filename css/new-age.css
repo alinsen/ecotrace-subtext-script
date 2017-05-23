@@ -458,7 +458,8 @@ header {
 }
 section.cta {
   background-image: url("../img/IMG_3272.jpg");
+  padding: 50px 0px 150px 0px;
 }
-.piechart {
-  background-color: none;
+section {
+  padding: 50px 0;
 }
