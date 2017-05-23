@@ -341,9 +341,11 @@
         var options = {
           title: 'Environmental Footprint Savings',
           backgroundColor: 'none',
-          colors:['#004411', 'blue', '#2ad9c9', 'red', '#105952'],
+          colors:['#66ffcc', '#6699ff', '#ff8080', '#ff99ff', '#66ffff'],
           fontName: 'Lato',
-          fontSize: 20,
+          fontSize: 14,
+          pieSliceTextStyle: {color: 'black'},
+          titleTextStyle: {fontSize: 30}
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
