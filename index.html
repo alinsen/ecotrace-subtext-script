@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading"></h2>
-
+                    <div id="piechart" style="width: 900px; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -308,6 +308,34 @@ WHAT DO YOU WANNA DO TODAY?<br>
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Environmental Footprint Savings', 'Percent'],
+          ['CO2 Emissions',     60],
+          ['Recylcing',      20],
+          ['Water Consumption',  10],
+          ['Heat Use', 5],
+          ['Other',    5]
+        ]);
+
+        var options = {
+          title: 'Environmental Footprint Savings',
+          backgroundColor: 'none',
+          colors:['#004411', 'blue', '#2ad9c9', 'red', '#105952']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 
 
 
