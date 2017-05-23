@@ -199,8 +199,44 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
                         <h2></h2>
+                          <!--
+                          <div id="dtText"></div>
+                          <script>
+                            var section = document.querySelector('section');
 
+                            var requestURL = 'https://github.com/alinsen/ecotrace-subtext-script/blob/master/json/eco_tips.json';
+                            var request = new XMLHttpRequest();
+                            request.open('GET', requestURL);
+                            request.responseType = 'json';
+                            request.send();
+                            request.onload = function() {
+                              var tips = request.response;
+                              showTips(tips);
+                            }
 
+                            function showTips(jsonFile) {
+                              var tips = jsonFile['tips'];
+                              var tipNum = Math.floor(Math.random() * 22) + 1;
+
+                              var tipSection = document.createElement('article');
+                              var title = document.createElement('h2');
+                              var number = document.createElement('p');
+                              var description = document.createElement('p');
+                              var citation = document.createElement('p');
+
+                              title.textContent = tips[tipNum].tipTitle;
+                              number.textContent = tips[tipNum].number;
+                              description.textContent = tips[tipNum].descrip;
+                              citation.textContent = tips[tipNum].site;
+
+                              tipSection.appendChild(title);
+                              tipSection.appendChild(description);
+                              tipSection.appendChild(citation);
+
+                              section.appendChild(tipSection);
+                            }
+                          </script>
+                        -->
                     </div>
                 </div>
             </div>
