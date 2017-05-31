@@ -28,7 +28,7 @@
         }
     })
 
-    $.getJSON("../json/eco_tips.json", function(json) {
+    $.getJSON("http://ecotrace.subtextscript.com/json/eco_tips.json", function(json) {
 
     var sectionTitle = document.getElementById('dt-section');
     console.log(json); // this will show the info it in firebug console
