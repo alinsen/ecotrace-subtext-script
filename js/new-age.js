@@ -1,5 +1,6 @@
+
+
 (function($) {
-    "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
@@ -28,53 +29,4 @@
         }
     })
 
-    $.getJSON("http://ecotrace.subtextscript.com/json/eco_tips.json", function(json) {
-
-    var sectionTitle = document.getElementById('dt-section');
-    console.log(json); // this will show the info it in firebug console
-    request.open('GET', json);
-    request.responseType = 'json';
-    request.send();
-
-    request.onload = function() {
-      var dailyTips = request.response;
-      populateDiv(dailyTips);
-      //showDailyTips(dailyTips);
-    }
-
-    function populateDiv(jsonObj) {
-      var newDiv = document.createElement('div');
-      newDiv.textContent = jsonObj['tipTitle'];
-      sectionTitle.appendChild(newDiv);
-
-      var newP = document.createElement('p');
-      newP.textContent = jsonObj['descrip'];
-      sectionTitle.appendChild(newP);
-    }
-});
-
 })(jQuery); // End of use strict
-
-
-/*var requestURL = 'http://ecotrace.subtextscript.com/json/eco_tips.json';
-var request = new XMLHttpRequest();
-console.log(request);
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-  var dailyTips = request.response;
-  populateDiv(dailyTips);
-  //showDailyTips(dailyTips);
-}
-
-function populateDiv(jsonObj) {
-  var newDiv = document.createElement('div');
-  newDiv.textContent = jsonObj['tipTitle'];
-  sectionTitle.appendChild(newDiv);
-
-  var newP = document.createElement('p');
-  newP.textContent = jsonObj['descrip'];
-  sectionTitle.appendChild(newP);
-}*/
