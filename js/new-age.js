@@ -29,6 +29,8 @@
     })
 
     $.getJSON("eco_tips.json", function(json) {
+
+    var sectionTitle = document.getElementById('dt-section');
     console.log(json); // this will show the info it in firebug console
     request.open('GET', json);
     request.responseType = 'json';
@@ -52,8 +54,6 @@
 });
 
 })(jQuery); // End of use strict
-
-var sectionTitle = document.getElementById('dt-section');
 
 
 /*var requestURL = 'http://ecotrace.subtextscript.com/json/eco_tips.json';
