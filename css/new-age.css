@@ -465,4 +465,5 @@ section {
 }
 p#headerText {
   font-size: 200%;
+  font-weight: none;
 }
