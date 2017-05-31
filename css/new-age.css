@@ -467,3 +467,20 @@ p#headerText {
   font-size: 200%;
   font-weight: none;
 }
+.section-heading#dt-section {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  margin-left: 10%;
+}
+p#dtTitle {
+  font-size: 200%;
+  font-family: 'Lato';
+  margin: 5% 0;
+}
+p#dtText {
+  font-family: 'Lato';
+}
+p#dtCite {
+  font-size: 80%;
+  margin: 5% 0;
+  float: right;
+}
