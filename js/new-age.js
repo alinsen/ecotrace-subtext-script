@@ -33,7 +33,7 @@
 var sectionTitle = document.getElementById('dt-section');
 
 
-var requestURL = 'http://alinsen.github.io/ecotrace-subtext-script/json/eco_tips.json';
+var requestURL = 'http://ecotrace.subtextscript.com/json/eco_tips.json';
 var request = new XMLHttpRequest();
 console.log(request);
 request.open('GET', requestURL);
