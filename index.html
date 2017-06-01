@@ -116,16 +116,63 @@
 
 
 
+
     <section id="myactivity">
         <div class="container">
           <div class="header1">
-            <h1>My Activity</h1>
+            <h1>Today's Activity</h1>
           </div>
             <div class="row">
               <div class="col-lg-12 text-right">
 		<!--medium https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp-->
-                    <div class="section-heading">
+                    <div class="section-heading" id="dt-section">
 
+
+<form action="Today">
+  <select onchange="document.getElementById('pulldown'+pulldownNo).style.display='none';document.getElementById('pulldown'+(pulldownNo=(this.selectedIndex+1))).style.display='block'">
+
+<p>WHAT DO YOU WANNA DO TODAY?<br></p>
+
+                      <option value="walk">Take a walk</option>
+                      <option value="recycle">Recycle</option>
+                      <option value="Trash" selected>Pick up trash</option>
+                      <option value="Waterbottle">Bring waterbottle</option>
+</select>
+</form>
+<script type="text/javascript">
+var pulldownNo=1;
+</script>
+
+
+
+<div class="col-lg-12 text-left">
+  
+  <div id="pulldown1" style="display:none">
+    <h3>Take a Walk</h3>
+    <form action="Today"><textarea cols="20" rows="1">Where to where?</textarea></form>
+                        <input type="submit" value="SEND">
+  </div>
+  
+    <div id="pulldown2" style="display:none">
+    <h3>Recycle</h3>
+    <form action="Today"><textarea cols="20" rows="1">What do you want Recycle?</textarea></form>
+                        <input type="submit" value="SEND">
+    </div>
+    
+      <div id="pulldown3" style="display:none">
+    <h3>Pick up Trash</h3>
+    <form action="Today"><textarea cols="20" rows="1">For how many?</textarea></form>
+                        <input type="submit" value="SEND">
+      </div>
+      
+        <div id="pulldown4" style="display:none">
+    <h3>Bring Waterbottle</h3>
+    <form action="Today"><textarea cols="20" rows="1">How much do you drink a day?</textarea></form>
+                        <input type="submit" value="SEND">
+</div>
+		 </div>
+
+		      <!--
                       <form>
                       WHAT DO YOU WANNA DO TODAY?<br>
                       <select name="selectActivity">
@@ -133,18 +180,22 @@
                       <option value="recycle">Recycle</option>
                       <option value="Trash" selected>Pick up trash</option>
                       <option value="Waterbottle">Bring waterbottle</option>
-                      <option value="Bus">Take Bus</option>
                       </select>
                       <input type="submit" value="SEND">
                       </form>
 
 
+
+                        <h2></h2>
+                          <p id = "Walk"></p>
+                          <p id = "Recycle"></p>
+                          <p id = "Pick up Trash"></p>
+                          <p id = "Waterbottle"></p>
+-->
+		      
                     </div>
               </div>
 
-	      <div class="col-lg-12 text-left">
-		hi
-		 </div>
             </div>
         </div>
     </section>

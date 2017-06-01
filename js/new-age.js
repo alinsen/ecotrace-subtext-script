@@ -31,6 +31,7 @@
 
 })(jQuery); // End of use strict
 
+
 //Daily Tips section
 
 //arrays
