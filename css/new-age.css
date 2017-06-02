@@ -449,12 +449,10 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 header {
-  background: url("../img/bg-pattern.png"), #105952;
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #105952, #2ad9c9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #105952, #2ad9c9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("../img/IMG_3857.jpg");
+  /*background: url("../img/bg-pattern.png"), @original-secondary; /* fallback for old browsers */
+  /*background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @original-secondary , @original-tertiary); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: url("../img/bg-pattern.png"), linear-gradient(to left, @original-secondary , @original-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section.cta {
   background-image: url("../img/IMG_3272.jpg");
