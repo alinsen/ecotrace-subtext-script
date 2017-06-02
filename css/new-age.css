@@ -474,10 +474,11 @@ p#headerText {
 p#dtTitle {
   font-size: 200%;
   font-family: 'Lato';
-  margin: 2% 0;
+  margin: 2% 0 2% 7%;
 }
 p#dtText {
   font-family: 'Lato';
+  margin-left: 7%;
 }
 p#dtCite {
   font-size: 80%;

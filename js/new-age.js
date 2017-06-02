@@ -46,7 +46,7 @@ var citeP = document.getElementById("dtCite");
 
 switchText();
 
-setInterval(switchText, 10000);
+setInterval(switchText, 7000);
 
 function switchText(){
     titleP.innerHTML = titles[index];
