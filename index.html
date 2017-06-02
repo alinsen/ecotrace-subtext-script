@@ -120,7 +120,7 @@
     <section id="myactivity">
         <div class="container">
           <div class="header1">
-            <h1>Today's Activity</h1>
+            <h1>My Activity</h1>
           </div>
             <div class="row">
               <div class="col-lg-12 text-right">
@@ -128,49 +128,52 @@
                     <div class="section-heading" id="dt-section">
 
 
-<form action="Today">
-  <select onchange="document.getElementById('pulldown'+pulldownNo).style.display='none';document.getElementById('pulldown'+(pulldownNo=(this.selectedIndex+1))).style.display='block'">
 
-<p>WHAT DO YOU WANNA DO TODAY?<br></p>
+                    <div class="col-md-4 text-left">
 
-                      <option value="walk">Take a walk</option>
-                      <option value="recycle">Recycle</option>
-                      <option value="Trash" selected>Pick up trash</option>
-                      <option value="Waterbottle">Bring waterbottle</option>
-</select>
-</form>
-<script type="text/javascript">
-var pulldownNo=1;
-</script>
+                      <p id = "myactivityHeader">What would you like to do today?<br></p>
+                      <form action="Today">
+                        <select onchange="document.getElementById('pulldown'+pulldownNo).style.display='none';document.getElementById('pulldown'+(pulldownNo=(this.selectedIndex+1))).style.display='block'">
 
+                                            <option value="walk">Take a walk</option>
+                                            <option value="recycle">Recycle</option>
+                                            <option value="Trash" selected>Pick up trash</option>
+                                            <option value="Waterbottle">Bring waterbottle</option>
+                      </select>
+                      </form>
+                      <script type="text/javascript">
+                      var pulldownNo=1;
+                      </script>
 
+                      <div id="pulldown1" style="display:none">
+                        <h3>Take a Walk</h3>
+                        <form action="Today"><textarea id="walk" cols="20" rows="1">Where to where?</textarea></form>
+                                            <input type="submit" value="SEND" onclick="return processedText('walk')">
+                      </div>
 
-<div class="col-lg-12 text-left">
-  
-  <div id="pulldown1" style="display:none">
-    <h3>Take a Walk</h3>
-    <form action="Today"><textarea cols="20" rows="1">Where to where?</textarea></form>
-                        <input type="submit" value="SEND">
-  </div>
-  
-    <div id="pulldown2" style="display:none">
-    <h3>Recycle</h3>
-    <form action="Today"><textarea cols="20" rows="1">What do you want Recycle?</textarea></form>
-                        <input type="submit" value="SEND">
-    </div>
-    
-      <div id="pulldown3" style="display:none">
-    <h3>Pick up Trash</h3>
-    <form action="Today"><textarea cols="20" rows="1">For how many?</textarea></form>
-                        <input type="submit" value="SEND">
-      </div>
-      
-        <div id="pulldown4" style="display:none">
-    <h3>Bring Waterbottle</h3>
-    <form action="Today"><textarea cols="20" rows="1">How much do you drink a day?</textarea></form>
-                        <input type="submit" value="SEND">
-</div>
-		 </div>
+                        <div id="pulldown2" style="display:none">
+                        <h3>Recycle</h3>
+                        <form action="Today"><textarea id="recycle" cols="20" rows="1">What do you want Recycle?</textarea></form>
+                                            <input type="submit" value="SEND" onclick="return processedText('recycle')">
+                        </div>
+
+                          <div id="pulldown3" style="display:none">
+                        <h3>Pick up Trash</h3>
+                        <form action="Today"><textarea id="trash" cols="20" rows="1">For how many?</textarea></form>
+                                            <input type="submit" value="SEND" onclick="return processedText('trash')">
+                          </div>
+
+                            <div id="pulldown4" style="display:none">
+                        <h3>Bring Waterbottle</h3>
+                        <form action="Today"><textarea id="water" cols="20" rows="1">How much do you drink a day?</textarea></form>
+                                            <input type="submit" value="SEND" onclick="return processedText('water')" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 text-left">
+                    <div id="myActivityText"></div>
+
+                  </div>
 
 		      <!--
                       <form>
@@ -192,7 +195,7 @@ var pulldownNo=1;
                           <p id = "Pick up Trash"></p>
                           <p id = "Waterbottle"></p>
 -->
-		      
+
                     </div>
               </div>
 

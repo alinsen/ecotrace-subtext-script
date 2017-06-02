@@ -29,7 +29,7 @@
         }
     })
 
-})(jQuery); // End of use strict
+})(jQuery);
 
 
 //Daily Tips section
@@ -53,4 +53,15 @@ function switchText(){
     textP.innerHTML = quotes[index];
     citeP.innerHTML = citations[index];
     index = Math.floor(Math.random() * (titles.length + 0)) + 0;
+}
+
+//My Activity section
+
+function processedText(idName){
+  var textAreaVal = document.getElementById(idName).value;
+  var activityDiv = document.getElementById("myActivityText");
+  var textPara = document.createElement("P");
+  var textAreaNode = document.createTextNode(textAreaVal);
+  activityDiv.appendChild(textPara).appendChild(textAreaNode);
+
 }
