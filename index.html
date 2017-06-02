@@ -372,6 +372,27 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         chart.draw(data, options);
+
+
+        var dataBarGraph = google.visualization.arrayToDataTable([
+          ['Environmental Footprint Savings', 'Percent', { role: 'style' }],
+          ['CO2 Emissions',     60, 'color: #66ffcc'],
+          ['Recycling',      20, 'color: #6699ff'],
+          ['Water Consumption',  10, 'color: #ff8080'],
+          ['Heat Use', 5, 'color: #ff99ff'],
+          ['Other',    5, 'color: #66ffff']
+        ]);
+
+        var barchart_options = {
+                       title:'Environmental Footprint Savings',
+                       backgroundColor: 'none',
+                       width: 800,
+                       height: 400,
+                       titleTextStyle: {fontSize: 30},
+                       fontName: 'Lato',
+                       legend: 'none'};
+        var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
+        barchart.draw(dataBarGraph, barchart_options);
       }
     </script>
 

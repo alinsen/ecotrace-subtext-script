@@ -29,10 +29,10 @@
         }
     })
 
-    $('#curve_chart').hide();
+    $('#barchart_div').hide();
 
     $('#graphpie').on('click', function() {
-        $('#piechart, #curve_chart').toggle();
+        $('#piechart, #barchart_div').toggle();
         var innerText = $('#piechart').is(":visible") ? "Graph" : "Pie Chart";
         $(this).text(innerText);
         console.log("Success!");
