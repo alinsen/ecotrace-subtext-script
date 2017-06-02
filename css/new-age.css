@@ -463,6 +463,9 @@ section.cta {
 section {
   padding: 50px 0;
 }
+#myprofileH {
+  color: black;
+}
 p#headerText {
   font-size: 200%;
   font-weight: none;
@@ -487,4 +490,7 @@ p#dtCite {
 }
 p#myactivityHeader {
   margin-top: 5%;
+}
+#graphpie {
+  margin-right: 6%;
 }

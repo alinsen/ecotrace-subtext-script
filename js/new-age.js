@@ -29,6 +29,15 @@
         }
     })
 
+    $('#graphimg').hide();
+
+    $('#graphpie').on('click', function() {
+        $('#piechart, #graphimg').toggle();
+        var innerText = $('#piechart').is(":visible") ? "Graph" : "Pie Chart";
+        $(this).text(innerText);
+        console.log("Success!");
+    });
+
 })(jQuery);
 
 
