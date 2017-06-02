@@ -106,7 +106,7 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div id = "graphimg"><img src = "img/IMG_0849.jpg" width="100px"/></div>
+                    <div id="curve_chart" style="width: 900px; height: 500px"></div>
                     <div id="piechart" style="width: 900px; height: 425px;"></div>
                     <button type="button" class="btn btn-info" id="graphpie">Graph</button>
                 </div>
@@ -370,6 +370,33 @@
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Environmental Footprint Savings', 'Percent'],
+          ['CO2 Emissions',     60],
+          ['Recycling',      20],
+          ['Water Consumption',  10],
+          ['Heat Use', 5],
+          ['Other',    5]
+        ]);
+
+        var options = {
+          title: 'Environmental Footprint Savings',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
         chart.draw(data, options);
       }
