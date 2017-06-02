@@ -68,9 +68,10 @@ function switchText(){
 
 function processedText(idName){
   var textAreaVal = document.getElementById(idName).value;
+  var addedText = String(idName) + " - " + textAreaVal;
   var activityDiv = document.getElementById("myActivityText");
   var textPara = document.createElement("P");
-  var textAreaNode = document.createTextNode(textAreaVal);
+  var textAreaNode = document.createTextNode(addedText);
   activityDiv.appendChild(textPara).appendChild(textAreaNode);
 
 }
