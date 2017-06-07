@@ -62,6 +62,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <!--Nav bar content-->
                     <li>
                         <a class="page-scroll" href="#myprofile">My Profile</a>
                     </li>
@@ -81,6 +82,7 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!--header which includes the text and the background style-->
     <header>
         <div class="container">
             <div class="row">
@@ -98,7 +100,7 @@
         </div>
     </header>
 
-
+    <!--My Profile section; includes divs that are used to generate google charts-->
     <section id="myprofile" class="bg-primary text-center">
           <div class="container">
             <div class="header1">
@@ -106,8 +108,10 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
+                    <!--google charts https://developers.google.com/chart/ -->
                     <div id="barchart_div" style="width: 900px; height: 425px;"></div>
                     <div id="piechart" style="width: 900px; height: 425px;"></div>
+                    <!--toggle button-->
                     <button type="button" class="btn btn-info" id="graphpie">Graph</button>
                 </div>
             </div>
@@ -117,7 +121,7 @@
 
 
 
-
+    <!--My Activity section; includes dropdown selections with javascript references-->
     <section id="myactivity">
         <div class="container">
           <div class="header1">
@@ -125,7 +129,7 @@
           </div>
             <div class="row">
               <div class="col-lg-12 text-right">
-		<!--medium https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp-->
+		              <!--medium https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp-->
                     <div class="section-heading" id="dt-section">
 
 
@@ -136,9 +140,9 @@
                       <form action="Today">
                         <select onchange="document.getElementById('pulldown'+pulldownNo).style.display='none';document.getElementById('pulldown'+(pulldownNo=(this.selectedIndex+1))).style.display='block'">
 
-                                            <option value="walk">Take a walk</option>
+                                            <option value="walk" selected>Take a walk</option>
                                             <option value="recycle">Recycle</option>
-                                            <option value="Trash" selected>Pick up trash</option>
+                                            <option value="Trash">Pick up trash</option>
                                             <option value="Waterbottle">Bring waterbottle</option>
                       </select>
                       </form>
@@ -146,6 +150,7 @@
                       var pulldownNo=1;
                       </script>
 
+                      <!--dropdowns, done with html forms and input types-->
                       <div id="pulldown1" style="display:none">
                         <h3>Take a Walk</h3>
                         <form action="Today"><textarea id="Take a walk" cols="20" rows="1">Where to where?</textarea></form>
@@ -204,6 +209,7 @@
         </div>
     </section>
 
+    <!--Plan my Day section; includes custom Google Maps elements-->
     <section id= "planmyday" class="cta">
         <div class="cta-content">
             <div class="container">
@@ -273,6 +279,8 @@
         <div class="overlay"></div>
     </section>
 
+
+    <!--Daily Tips section; most of this section can be found referenced in javascript-->
     <section id="dailytips" class="features">
         <div class="container">
           <div class="header1">
@@ -285,10 +293,7 @@
                           <p id="dtTitle"></p>
                           <p id = "dtText"></p>
                           <p id = "dtCite"> </p>
-
-
                           </div>
-
                     </div>
                 </div>
             </div>
@@ -296,7 +301,7 @@
     </section>
 
 
-
+    <!--hold over from the new-age theme. Given more time and project continuation, we would set up social media accounts and include them here-->
     <section id="contact" class="contact bg-primary">
         <div class="container">
             <h2></h2>
@@ -314,6 +319,7 @@
         </div>
     </section>
 
+    <!--new-age theme hold over-->
     <footer>
         <div class="container">
             <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
@@ -343,7 +349,9 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
 
+    <!--Scripts for creating both the pie chart and the bar graph using Google charts, which we customized for style and using dummy data-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
